@@ -17,7 +17,7 @@ body{
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: #f5f5f5;
+    background-color: #f9f9f9;
 }
 
 header{
@@ -25,8 +25,15 @@ header{
     position: relative;
 }
 
+.carousel-container{
+    overflow: hidden;
+    width: 100%;
+}
+
 .slider{
-    max-height: 100vh;
+    height: 70vh;
+    width: 100%;
+    display: flex;
 }
  
 .carousel-container .slider img{
@@ -54,7 +61,7 @@ header{
 }
 
 .logo{
-    width: 39%;
+    width: 20%;
     padding: .5rem;
 }
 .logo img{
@@ -64,7 +71,7 @@ header{
 /* -- Barra de navegacion */
 
 nav{
-    width: 60%;
+    width: 80%;
     text-align: right;
     display: inline-block;
     /* z-index: 10000; */
@@ -88,61 +95,77 @@ nav{
     color: #2878B5;
     text-decoration: none;
     display: inline-block;
-    padding: 2.3rem 1rem;
+    padding: 1rem;
     font-size: 1.8rem;
     transition: all .2s ease;
     font-weight: 600;
     letter-spacing: 1px;
-    transition: all .3s ease;
+    /* transition: all .2s ease-out; */
 }
 
 .nav a:hover,
 .nav .active{
-    border-radius: 3px;
-    background-color: #2878B5;
-    color: #fff;
+    /* border-radius: 3px; */
+    border-bottom: solid 3px #2878B5;
+    /* color: #fff; */
 }
 
 /* --- Proyectos Destacados */
 
-/* .proyectos-destacados{
-    position: relative;
+.proyectos-destacados{
+    /* position: relative; */
 }
 
 .proyectos-destacados .proyectos{
-    position: absolute;
-    padding-bottom: 4rem;
+    /* position: absolute; */
+    /* padding-bottom: 4rem; */
     display: flex;
-    flex-wrap: nowrap;
-    top: -12rem;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.img-container{
-    width: 20%;
-    height: 17rem;
-    background: orangered;
-    border-radius: 5px;
-    overflow: hidden;
-    transform: scale(.9);
-    transition: all .3s ease;
+    flex-wrap: wrap;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
 }
 
-.img-container .photo{
+.proyecto__item{
+    text-align: center;
+    width: 23%;
+    height: auto;
+    margin: 4rem 1rem;
+    border: solid 1px #eee;
+    box-shadow: 0 0 .7rem rgba(0, 0, 0, .1);
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.proyecto__item__titulo{
+    min-height: 14rem;
+}
+
+.proyecto__item__titulo h3{
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    letter-spacing: 1.2px;
+}
+
+.proyecto__item__titulo p{
+    color:#555;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+.proyecto__item__img{
     width: 100%;
     height: 100%;
-    background: orangered;
 }
 
-.img-container:hover{
-    transform: scale(1);
-    border-radius: 5px;
-    overflow: hidden;
+.proyecto__item__img img{
+    width: 100%;
+    border-top: 4px solid #FEBE00;
+    height: 160px;
 }
-
 .proyectos-destacados .heading-1{
-    padding-top: 5rem;
-    padding-left: 12rem;
+    /* padding-top: 5rem; */
+    /* padding-left: 12rem; */
+    width: 100%;
 }
 
 .proyectos-destacados .heading-1 h2{
@@ -160,7 +183,7 @@ nav{
     border-bottom: 5px solid #FEBE00;
     width: 77px;
     border-radius: 40px;
-} */
+}
 
 /*  --- Servicios --- */
 
@@ -199,56 +222,54 @@ nav{
 }
 
 .servicios-view .servicio{
-    position: relative;
+    /* position: relative; */
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    border-radius: 10px;
-    overflow: hidden;
+    /* border-radius: 10px; */
+    /* overflow: hidden; */
+    justify-content: center;
 }
 
-.servicios-view .servicio:nth-child(2n+2){
-    flex-direction: row-reverse;
-    margin-top: 2rem;
+.servicio__video__container{
+    width: 90%;
+    /* max-height: 38.7rem; */
+    margin: 2rem auto;
 }
 
-
-.servicios-view .servicio .servicio-imgbox{
-    position: sticky;
-    top:0;
-    width: 40%;
-
+.servicio__video{
+    width: 100%;
+    /* max-height: 38.7rem; */
+    height: 38.7rem;
 }
 
-.servicios-view .servicio .servicio-imgbox img{
-   max-height: 100%;
-   width: 100%;
-}
 
 .servicio-content{
     display: flex;
     width: 60%;
     flex-direction: column;
     justify-content: center;
-    background-color: #478DC3;
+    /* background-color: #478DC3; */
 }
 
 .servicio-content h2,
 .servicio-content p{
    color: #fff;
+   padding: 1rem 0;
 }
 
 .servicio-content h2{
     text-align: center;
     font-weight: 600;
     margin-bottom: 2rem;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
 }
 
 .servicio-content p{
+    text-align: justify;
     font-weight: 300;
     margin: 0 4rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     letter-spacing: 1.5px;
     line-height: 2.5rem;
 }
@@ -302,7 +323,7 @@ nav{
 }
 
 /*  --- Clientes ---*/
-/* 
+
 .heading-2{
     padding-top: 8rem;
     padding-left: 6rem; 
@@ -333,14 +354,16 @@ nav{
 }
 
 .client-container .cliente-img{
-    height: 10rem;
+    height: 5rem;
+    /* width: 100%; */
     margin-top: 4rem;
     margin-right: 4rem;
 }
 
 .client-container .cliente-img img{
-    height: 100%;
-} */
+    /* height: 100%; */
+    width: 100%;
+}
 
 /* Footer */
 
@@ -448,6 +471,7 @@ footer .redes a:hover{
 section .servicios-personalizados{
     background-color: #fff;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 128rem;
     margin: 4rem auto;
@@ -537,21 +561,28 @@ section .servicios-personalizados-contenido p{
 		letter-spacing: 2px;
 }
 .producto-item{
-	position: relative;
-	border-radius:5px;
+    position: relative;
+    border-radius:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	overflow:hidden;
 	margin-bottom: 30px;
     transition: all .3s ease;
-    width: 30%;
+    width: 100%;
     margin: 2rem 1rem;
+    border: 1px solid #e1e1e1;
 }
 
 .productos-img{
-	width:100%;
+    max-width:30%;
+    width: auto;
+    order: 1;
 }
 
 .productos-img img{
-	width:100%;
+    width:200px;
+    height: 100%;
 }
 .producto-item:hover{
 	transform: translateY(-10px);
@@ -559,16 +590,17 @@ section .servicios-personalizados-contenido p{
 }
 
 .productos-title{
-	width: 95%;
-	text-align:center;
-	padding:30px;
+	width: 70%;
+	/* text-align:center; */
+	margin: 0 4rem;
 	color: #000;
 	font-size: 20px;
 	height: auto;
-	background:#fff;
-	margin:0 auto 20px auto;
-	border-bottom:3px solid #FEB401;
-	letter-spacing: 1px;
+	/* background:#fff; */
+	/* margin: 20px; */
+	/* border-bottom:3px solid #FEB401; */
+    letter-spacing: 1px;
+    order: 2;
 }
 .yellow{
 	border-bottom: 3px solid #FEB401;
@@ -627,7 +659,7 @@ section .servicios-personalizados-contenido p{
 
 .filtro_producto{
     position: fixed;
-    margin: 20rem 1rem;
+    margin: 20rem 2rem;
     width: 18%;
     background-color: #fff;
     padding: 1rem;
@@ -655,31 +687,14 @@ section .servicios-personalizados-contenido p{
     margin-left: 20rem;
 }
 
-/* CAROUSEL */
-/* 
-.glide__arrow{
-    position: absolute;
-    background-color: transparent;
-    border: none;
-    bottom: -3rem;
-    z-index: 1000000;
-}
-
-.glide__arrow--left{
-    right: 7rem;
-}
-
-.glide__arrow--right{
-    right: 1rem;
-}
-
-.glide__arrow .fas{
-    font-size: 3rem;
-    color: #353535;
-} */
-
 @media only screen and (max-width:1156px){
     
+.proyecto__item{
+    width: 29%;
+}
+.proyecto__item__img img{
+    height: 14rem;
+}
 
 .contacto{
     padding: .5rem;
@@ -693,12 +708,17 @@ section .servicios-personalizados-contenido p{
     margin: 2rem 0;
     width: 100%;
 }
-
-
 }
 
 @media only screen and (max-width:950px){
     
+    .proyecto__item{
+        width: 45%;
+    }    
+    .proyecto__item__img img{
+        height: 21.4rem;
+    }
+
     .servicio-content{
         padding: 2rem 0;
     }
@@ -739,6 +759,14 @@ section .servicios-personalizados-contenido p{
 }
 
 @media only screen and (max-width:850px){
+
+    .proyecto__item{
+        width: 100%;
+    }    
+    .proyecto__item__img img{
+        height: 30rem;
+    }
+
     footer .footer-contenido .footer-item{
         width: 40%;
         margin: 0 1rem;
@@ -792,9 +820,9 @@ section .servicios-personalizados-contenido p{
         display: none;
     }
     
-.producto-item{
+/* .producto-item{
     width: 45%;
-}
+} */
 
 .split .middle-align{
     width: 100%;
@@ -804,6 +832,23 @@ section .servicios-personalizados-contenido p{
 }
 
 @media only screen and (max-width:600px){
+    section .servicios-personalizados-img{
+        width: 100%;
+    }
+    
+    section .servicios-personalizados-contenido{
+        width: 100%;
+    }
+
+    .proyecto__item__img img{
+        height: 21.4rem;
+    }
+    .productos-title{
+        text-align: center;
+    }
+    .productos-img img{
+        width: 100px;
+    }
 
     .servicios--heading{
         padding: 2rem 0;
