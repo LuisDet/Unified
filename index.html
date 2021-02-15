@@ -1,226 +1,383 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="shortcut icon" href="./img/unified vectorizado s-02.svg" type="image/x-icon">
-    <title>Unified</title>
-    <script src="https://kit.fontawesome.com/6de744ea0f.js" crossorigin="anonymous"></script>
-</head>
-<body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Somos una empresa dedicada a la comercialización y distribución de fibra óptica, especializada en la planeación, manejo y ejecución de proyectos de redes de telecomunicación para empresas."
+    />
+    <link rel="stylesheet" href="./css/estilos.min.css?20200625" />
+    <link
+      rel="shortcut icon"
+      href="https://res.cloudinary.com/dugzgpblw/image/upload/v1591123666/img/Unified%20Logo.svg"
+      type="image/x-icon"
+    />
+    <title>
+      Unified - Distribuidor de fibra óptica, especializado en la planeación,
+      manejo y ejecución de proyectos de redes de telecomunicación para empresas
+    </title>
+    <script
+      src="https://kit.fontawesome.com/6de744ea0f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
     <header>
-        <div class="contenedor">
-            <div class="menu">
-                <div class="menu_container">
-                <div class="logo">
-                    <a href="#"><img src="https://res.cloudinary.com/dugzgpblw/image/upload/v1588795279/img/Unified%20Logo.svg" alt="Unified Logo"></a>
-                </div>
-                <nav>
-                    <input type="checkbox" id="check">
-                    <label for="check" class="checkbtn">
-                        <i class="fas fa-bars"></i>
-                    </label>
-                    <div class="nav">
-                        <a href="#" class="active">Inicio</a>
-                        <a href="productos.html">Productos</a>
-                        <a href="servicios_personalizados.html">Servicios Personalizados</a>
-                        <a href="Contacto.html">Contacto</a>
-                    </div>
-                </nav>
+      <div class="container">
+        <div class="menu">
+          <div class="menu__container">
+            <div class="menu__logo">
+              <a href="#"
+                ><img
+                  src="https://res.cloudinary.com/dugzgpblw/image/upload/v1591123666/img/Unified%20Logo.svg"
+                  alt="Unified Logo"
+                  class="menu__image"
+              /></a>
             </div>
-            </div>
+            <nav class="nav">
+              <input type="checkbox" id="check" />
+              <label for="check" class="nav__checkbtn">
+                <i class="fas fa-bars"></i>
+              </label>
+              <div class="nav__items">
+                <a href="/" class="nav__item nav__item--active">Inicio</a>
+                <a href="productos" class="nav__item">Productos</a>
+                <a href="Contacto" class="nav__item">Contacto</a>
+              </div>
+            </nav>
+          </div>
         </div>
-        <div class="carousel-container">
-            <div class="slider">
-                <img src="https://res.cloudinary.com/dugzgpblw/image/upload/v1588795064/img/Slider/Unified%20Comunication%20Home%20page%20Image.png">
-                <img src="./img/Slider/A223.png">
-                <img src="./img/Slider/A4.png">
-                <img src="https://res.cloudinary.com/dugzgpblw/image/upload/v1588795064/img/Slider/Unified%20Comunication%20Home%20page%20Image.png">
-                <img src="https://res.cloudinary.com/dugzgpblw/image/upload/v1588795064/img/Slider/Unified%20Comunication%20Home%20page%20Image.png" id="lastImage">
-        </div> 
+      </div>
+      <div class="carousel">
+        <div class="carusel__items">
+          <img
+            src="https://res.cloudinary.com/dugzgpblw/image/upload/v1592941260/img/Slider/Unified%20RD%20-%20Desarrollo%20de%20proyectos.png"
+            class="carusel__item"
+            alt="Unified RD - Desarrollo de proyectos"
+          />
+          <img
+            src="https://res.cloudinary.com/dugzgpblw/image/upload/v1593114839/img/Slider/Unified%20RD%20-%20Soluciones%20activas%20en%20el%20area%20de%20Datacom.png"
+            class="carusel__item"
+            alt="Unified RD - Soluciones activas en el area de Datacom"
+          />
+          <img
+            src="https://res.cloudinary.com/dugzgpblw/image/upload/v1592941260/img/Slider/Unified%20RD%20-%20Soluciones%20de%20fibra%20optica.png"
+            class="carusel__item"
+            alt="Unified RD - Soluciones de fibra optica"
+          />
+        </div>
+      </div>
     </header>
-
-    <section class="proyectos-destacados">
-        <div class="servicios--heading servicios--heading--black">
+    <main>
+      <section class="featured-projects">
+        <div class="container">
+          <div class="heading heading--black">
             <h2>
-                Proyectos desctacados
+              Proyectos destacados
             </h2>
-        </div>
-        <div class="proyectos contenedor">
-
-        <div class="proyecto__item">
-            <div class="proyecto__item__titulo">
-                <h3>Punta Catalina</h3>
-                <p>fusión de más de 3,000 hilos de fibra Single Mode y Multimode al igual que certificaciones en las frecuencias 1310nm, 1550nm, 850nm y 1300nm</p>
+          </div>
+          <div class="featured-projects__container">
+            <div class="featured-projects__item">
+              <div class="featured-projects__titulo">
+                <p class="featured-projects__titulo--h3">
+                  Zona Franca las Americas
+                </p>
+                <p class="featured-projects__titulo--p" title="Hola">
+                  Tendido de anillo en microfibra
+                </p>
+              </div>
+              <div class="featured-projects__thumbnail">
+                <img
+                  src="https://res.cloudinary.com/dugzgpblw/image/upload/v1592877945/img/Proyectos%20destacados/Unified%20RD%2C%20Proyecto%20-%20Zona%20Franca%20las%20Americas.jpg"
+                  alt="Unified RD, Proyecto - Zona Franca las Americas"
+                  class="featured-projects__image"
+                />
+              </div>
             </div>
-            <div class="proyecto__item__img">
-                <img src="./img/Proyectos destacados/Punta catalina.png" alt="">
-            </div>
-        </div>
 
-        <div class="proyecto__item">
-            <div class="proyecto__item__titulo">
-                <h3>Zona Franca las Americas</h3>
-                <p>Tendido de anillo en microfibra</p>
+            <div class="featured-projects__item">
+              <div class="featured-projects__titulo">
+                <p class="featured-projects__titulo--h3">Zona Franca Pisano</p>
+                <p class="featured-projects__titulo--p">
+                  Instalación de anillo de fibra óptica y sistema de cámaras de
+                  seguridad
+                </p>
+              </div>
+              <div class="featured-projects__thumbnail">
+                <img
+                  src="https://res.cloudinary.com/dugzgpblw/image/upload/v1592877945/img/Proyectos%20destacados/Unified%20RD%2C%20Proyecto%20-%20Zona%20Franca%20Pisano.jpg"
+                  alt="Unified RD, Proyecto - Zona Franca Pisano"
+                  class="featured-projects__image"
+                />
+              </div>
             </div>
-            <div class="proyecto__item__img">
-                <img src="./img/Proyectos destacados/zona Franca las Americas.jpeg" alt="">
+
+            <div class="featured-projects__item">
+              <div class="featured-projects__titulo">
+                <p class="featured-projects__titulo--h3">Punta Catalina</p>
+                <p class="featured-projects__titulo--p">
+                  Fusión de más de 3,000 hilos de fibra Single Mode y Multimode
+                  al igual que certificaciones en las frecuencias 1310nm,
+                  1550nm, 850nm y 1300nm
+                </p>
+              </div>
+              <div class="featured-projects__thumbnail">
+                <img
+                  src="https://res.cloudinary.com/dugzgpblw/image/upload/v1592877945/img/Proyectos%20destacados/Unified%20RD%2C%20Proyecto%20-%20Punta%20Catalina.png"
+                  alt="Unified RD, Proyecto - Punta Catalina"
+                  class="featured-projects__image"
+                />
+              </div>
             </div>
-        </div>
-
-        <div class="proyecto__item">
-            <div class="proyecto__item__titulo">
-                <h3>Zona Franca Pisano</h3>
-                <p>Instalación de anillo de fibra óptica y sistema de cámaras de seguridad</p>
-            </div>
-            <div class="proyecto__item__img">
-                <img src="./img/Proyectos destacados/Zona Franca Pisano.jfif" alt="">
-            </div>
-        </div>
-
-        <div class="proyecto__item">
-            <div class="proyecto__item__titulo">
-                <h3>ONEMAX</h3>
-                <p>Venta de Sistema de DWDM</p>
-            </div>
-            <div class="proyecto__item__img">
-                <img src="./img/Proyectos destacados/onemax.png" alt="">
-            </div>
-        </div>
-
-    </section>
-
-    <section class="servicios">
-        <div class="servicios--heading">
-            <h2>Servicio</h2>
-        </div>
-        <div class="servicios-view contenedor">
-            <div class="servicio">
-                <div class="servicio-content">
-                    <h2 class="heading2">
-                        Desarrollo de Proyectos
-                    </h2>
-                    <p>
-                        Desarrollamos proyectos de instalación y puesta en marcha de redes de fibra óptica con los más altos estándares de calidad para clientes en diferentes industrias en el territorio Dominicano.
-                        <br><br>
-                        Contamos con un personal dedicado con equipos de certificación de ultima línea (Exfo, Fujikura, Sumitomo) y con cobertura a nivel nacional.
-                    </p>
-
-                    <div class="servicio__video__container">
-                        <iframe class="servicio__video" src="https://www.youtube.com/embed/D1BBcekp254" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="productos-destacadaos">
-        <div class="servicios--heading servicios--heading--black">
-            <h2>
-                Productos Destacados
-            </h2>
-        </div>
-        <div class="contenedor">
-            <div class="productos-destacadaos__contenedor">
-                <div class="producto_item">
-                
-                <img src="https://res.cloudinary.com/dugzgpblw/image/upload/v1588725700/img/Productos/Patch-Cord/img_Productos_Patch-Cord_OM3-_ifthrf.jpg" alt="Patch cord OM3"/>
-                <p class="producto_title">Patch cord OM3</p>
-                
-                </div>
-                <div class="producto_item">
-                
-                <img src="./img/PLC-A-104.jpg" alt="Splitters fibra optica"/>
-                <p class="producto_title">Splitters fibra optica</p>
-                
-                </div>
-                <div class="producto_item">
-                
-                <img src="https://res.cloudinary.com/dugzgpblw/image/upload/v1588725698/img/Productos/Converter/Media%20Converter/img_Productos_Converter_Media_Converter_AOM-5100-SFP_wiygiy.webp" alt="Media converter AOM 5100 SFP" />
-                <p class="producto_title">Media converter AOM 5100 SFP</p>
-                
-                </div>
-                <div class="producto_item">
-                
-                <img src="./img/UHp4SFRQOQ==2020-05-10.jpeg" alt="Fibra Optica Mangas / Cajas de agregación"/>
-                <p class="producto_title">Fibra Optica Mangas / Cajas de agregación</p>
-                
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="Clients">
-        <div class="servicios--heading servicios--heading--black">
-            <h2>
-                Nuestros socios
-            </h2>
-        </div>
-        <div class="contenedor">
-            <div class="client-container">
-                <div class="cliente-img">
-                    <img src="./img/Clientes/AOA.jpg" alt="Proyecto-1" class="photo">
-                </div>
-                <div class="cliente-img">
-                    <img src="./img/Clientes/Taihan.jpg" alt="Proyecto-1" class="photo">
-                </div>
-                <div class="cliente-img">
-                    <img src="./img/Clientes/Vissem.jpg" alt="Proyecto-1" class="photo">
-                </div>
-            </div>
+          </div>
         </div>
       </section>
 
-    <footer>
-         <div class="contenedor">
-             <div class="footer-img">
-                <a href="#"><img src="https://res.cloudinary.com/dugzgpblw/image/upload/v1588795279/img/Unified%20Logo.svg" alt="Unified Logo"></a>
-             </div>
-
-         <div class="footer-contenido">
-             <div class="footer-item footer-about">
-                 <h2>
-                     Quienes somos?
-                 </h2>
-                 <p>
-                    Somos una empresa dedicada a la comercialización y distribución de fibra óptica, especializada en la planeación, manejo y ejecución de proyectos de redes de telecomunicación para empresas.
-                 </p>
-             </div>
-             <div class=" footer-item footer-productos">
-                 <h2>
-                    Productos
-                 </h2>
-                 <ul>
-                    <li><a href="productos.html#path_core">Path Cord</a></li>
-                    <li><a href="productos.html#terminal_box">Ternimal Box</a></li>
-                    <li><a href="productos.html#media_converter">Media Converter</a></li>
-                    <li><a href="productos.html#video_converter">Video Converter</a></li>
-                    <li><a href="productos.html#managed_industrial_switch">Managed Industrial Switch</a></li>
-                    <li><a href="productos.html#unmanaged_poe_switch">Unmanaged POE Switch</a></li>
-                    <li><a href="productos.html#unmanaged_ethernet">Unmanaged Ethernet</a></li>
-                </ul>
-             </div>
-             <div class="footer-item footer-location">
-                 <h2>
-                     Contacto
-                 </h2>
-                 <div class="information">
-                    <i class="fas fa-map-marker-alt"><span> Av. Tiradentes #35, Edificio Marmer 3er. Piso, Local 3B, Santo Domingo 10122</span></i>
-                    <i class="fas fa-phone-alt"><span>(809) 567-7962</span></i>
-                    <i class="fas fa-envelope"><span>cmrosario@weareucom.com</span></i>
-                    <i class="fas fa-clock"><span>Lunes - Viernes: 9:00AM - 6:00PM</span></i>
-                 </div>
-                 <div class="redes">
-                    <a href="https://www.instagram.com/unifiedcommunicationsrd/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/unified-communications-srl-9608101a2/"><i class="fab fa-linkedin-in"></i></a>
-                 </div>
-             </div>
-         </div>
+      <section class="services">
+        <div class="container">
+          <div class="heading">
+            <h2>Servicios</h2>
+          </div>
+          <div class="services__video-container">
+            <iframe
+              class="services__video"
+              src="https://www.youtube.com/embed/D1BBcekp254"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
+      </section>
+
+      <section class="featured-products">
+        <div class="container">
+          <div class="heading heading--black">
+            <h2>
+              Productos Destacados
+            </h2>
+          </div>
+          <div class="featured-products__container">
+            <div class="featured-products__item">
+              <img
+                src="https://res.cloudinary.com/dugzgpblw/image/upload/v1588725700/img/Productos/Patch-Cord/img_Productos_Patch-Cord_OM3-_ifthrf.jpg"
+                alt="Patch cord OM3"
+                class="featured-products__image"
+              />
+              <p class="featured-products__title">Patch cord OM3</p>
+            </div>
+            <div class="featured-products__item">
+              <img
+                src="https://res.cloudinary.com/dugzgpblw/image/upload/v1592878118/img/Productos/Splitters%20fibra%20optica.jpg"
+                alt="Splitters fibra optica"
+                class="featured-products__image"
+              />
+              <p class="featured-products__title">Splitters fibra optica</p>
+            </div>
+            <div class="featured-products__item">
+              <img
+                src="https://res.cloudinary.com/dugzgpblw/image/upload/v1588725698/img/Productos/Converter/Media%20Converter/img_Productos_Converter_Media_Converter_AOM-5100-SFP_wiygiy.webp"
+                alt="Media converter AOM 5100 SFP"
+                class="featured-products__image"
+              />
+              <p class="featured-products__title">
+                Media converter AOM 5100 SFP
+              </p>
+            </div>
+            <div class="featured-products__item">
+              <img
+                src="https://res.cloudinary.com/dugzgpblw/image/upload/v1592878118/img/Productos/Fibra%20Optica%20Mangas%20/%20Cajas%20de%20agregaci%C3%B3n.jpg"
+                alt="Fibra Optica Mangas / Cajas de agregación"
+                class="featured-products__image"
+              />
+              <p class="featured-products__title">
+                Fibra Optica Mangas / Cajas de agregación
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer__thumbnail">
+          <a href="#"
+            ><img
+              src="https://res.cloudinary.com/dugzgpblw/image/upload/v1591123666/img/Unified%20Logo.svg"
+              class="footer__image"
+          /></a>
+        </div>
+
+        <div class="footer__container">
+          <div class="footer__item footer__about">
+            <h2 class="footer__title">
+              Quienes somos?
+            </h2>
+            <p class="footer__text-content">
+              Somos una empresa dedicada a la comercialización y distribución de
+              fibra óptica, especializada en la planeación, manejo y ejecución
+              de proyectos de redes de telecomunicación para empresas.
+            </p>
+          </div>
+          <div class="footer__item footer-productos">
+            <h2 class="footer__title">
+              Productos
+            </h2>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a
+                  class="footer__list-enlace"
+                  href="lista-productos.html#patchCord"
+                  >Path Cord</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a
+                  class="footer__list-enlace"
+                  href="lista-productos.html#terminalBox"
+                  >Ternimal Box</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a
+                  class="footer__list-enlace"
+                  href="lista-productos.html#mediaConverter"
+                  >Media Converter</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a
+                  class="footer__list-enlace"
+                  href="lista-productos.html#videoConverter"
+                  >Video Converter</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a
+                  class="footer__list-enlace"
+                  href="lista-productos.html#managedIndustrialSwitch"
+                  >Managed Industrial Switch</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a
+                  class="footer__list-enlace"
+                  href="lista-productos.html#unmanagedPOESwitch"
+                  >Unmanaged POE Switch</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a
+                  class="footer__list-enlace"
+                  href="lista-productos.html#unmanagedEthernet"
+                  >Unmanaged Ethernet</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item footer-location">
+            <h2 class="footer__title">
+              Contacto
+            </h2>
+            <div class="footer__information">
+              <i class="fas fa-map-marker-alt"
+                ><span class="footer__information-text">
+                  Av. Tiradentes #35, Edificio Marmer 3er. Piso, Local 3B, Santo
+                  Domingo 10122</span
+                ></i
+              >
+              <i class="fas fa-phone-alt"
+                ><span class="footer__information-text">(809) 567-7962</span></i
+              >
+              <i class="fas fa-envelope"
+                ><span class="footer__information-text"
+                  >cmrosario@weareucom.com</span
+                ></i
+              >
+              <i class="fas fa-clock"
+                ><span class="footer__information-text"
+                  >Lunes - Viernes: 9:00AM - 6:00PM</span
+                ></i
+              >
+            </div>
+            <div>
+              <a href="https://www.instagram.com/unifiedcommunicationsrd/"
+                ><i class="fab fa-instagram footer__redes"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/unified-communications-srl-9608101a2/"
+                ><i class="fab fa-linkedin-in footer__redes"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-    <script src="./js/app.js"></script>
-</body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-167803526-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-167803526-1');
+    </script>
+
+    <script id="mcjs">
+      !(function (c, h, i, m, p) {
+        (m = c.createElement(h)),
+          (p = c.getElementsByTagName(h)[0]),
+          (m.async = 1),
+          (m.src = i),
+          p.parentNode.insertBefore(m, p);
+      })(
+        document,
+        'script',
+        'https://chimpstatic.com/mcjs-connected/js/users/9b6268a68a45ee84f00bb2fa5/5de547334b37089b711d50714.js'
+      );
+    </script>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: 'v7.0',
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, 'script', 'facebook-jssdk');
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div
+      class="fb-customerchat"
+      attribution="install_email"
+      page_id="107657150967091"
+      logged_in_greeting="Hola! &#xbf;Como podemos ayudarte?"
+      logged_out_greeting="Hola! &#xbf;Como podemos ayudarte?"
+    ></div>
+
+    <!-- JAVASCRIPT PERSONALIZADO -->
+    <script src="./js/products.min.js"></script>
+    <script src="./js/carrousel.min.js?20200625"></script>
+  </body>
 </html>
